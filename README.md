@@ -3,11 +3,19 @@
 Job Matcher is a web application designed to help users find job opportunities that align with their skills and
 preferences.
 
-## Features
+### How It Works:  
+1. **User Authentication** – New users must register, and existing users can log in.  
+2. **Resume Upload** – Users upload a PDF containing their resume or relevant information.  
+3. **Content Analysis** – The system analyzes the PDF to determine its relevance to the following fields:  
+   - **Information Technology**  
+   - **Sales**  
+   - **Business Development**  
+   - **Product Management**  
+4. **Job Fetching Service** – Every 24 hours, the system fetches and updates the job dataset from [We Work Remotely](https://weworkremotely.com/remote-jobs.rss).  
+5. **Job Matching & Recommendation** – Based on the updated dataset, the system suggests the **10 most relevant jobs** to the user.  
+6. **Access Control** – If the uploaded document is unrelated to the specified fields, the user is restricted from proceeding further.  
 
-- **User-Friendly Interface**: Navigate through job listings with ease.
-- **Skill-Based Matching**: Receive job recommendations based on your unique skill set.
-- **Real-Time Updates**: Stay informed with the latest job openings.
+This ensures that users receive **fresh, relevant job opportunities** based on their background and the latest job postings.  
 
 ## Technologies Used
 
