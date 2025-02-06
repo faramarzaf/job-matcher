@@ -1,6 +1,7 @@
 # Job Matcher
 
-Job Matcher is a web application designed to help users find job opportunities that align with their skills and preferences.
+Job Matcher is a web application designed to help users find job opportunities that align with their skills and
+preferences.
 
 ## Features
 
@@ -25,12 +26,12 @@ To set up the project locally:
    cd job-matcher
 
 2. **Set Up the Environment**:
-Ensure you have Python installed. 
-Install the required Python packages: 
+   Ensure you have Python installed.
+   Install the required Python packages:
    ```bash
        pip install -r requirements.txt 
-3. **Database Initialization**: 
-Ensure MongoDB is installed and running. Use the provided **init-mongo.js** script to initialize the database.  
+3. **Database Initialization**:
+   Ensure MongoDB is installed and running. Use the provided **init-mongo.js** script to initialize the database.
 
 
 4. **Env Setup**:
@@ -49,7 +50,7 @@ Ensure MongoDB is installed and running. Use the provided **init-mongo.js** scri
       MONGO_URI=mongodb://localhost:27017
   
 5. **Docker Setup**:  
-Alternatively, you can run the application using Docker. Build and Start the Containers:   
+   Alternatively, you can run the application using Docker. Build and Start the Containers:
     ```bash
        docker-compose up --build
 
