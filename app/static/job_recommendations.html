@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recommendations - Job Matcher</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<nav class="nav-bar">
+    <div class="nav-content">
+        <div class="logo">
+            <h1 style="margin: 0; font-size: 1.5rem;">Job Matcher</h1>
+        </div>
+        <div class="nav-links">
+            <div class="button-group">
+                <button class="button button-secondary" onclick="window.location.href='/cv-upload.html'">
+                    <i data-lucide="upload"></i>
+                    Update CV
+                </button>
+                <button class="button button-secondary" onclick="logout()">Sign Out</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <header style="margin-bottom: 2rem;">
+        <h1>Your Job Matches</h1>
+        <p class="text-secondary">Based on your CV, we've found these perfect matches for you</p>
+    </header>
+
+
+
+    <div id="recommendations-container" class="animate-fade-in">
+        <!-- Jobs will be dynamically inserted here -->
+        <div class="loading-spinner">
+            <i data-lucide="loader" class="spin"></i>
+            <p>Finding your perfect matches...</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    function logout() {
+        localStorage.removeItem('access_token');
+        window.location.href = '/';
+    }
+</script>
+<script src="/js/recommendations.js"></script>
+</body>
+</html>
