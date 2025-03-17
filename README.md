@@ -3,6 +3,10 @@
 Job Matcher is a web application designed to help users find job opportunities that align with their skills and
 preferences.
 
+![v](v.gif)
+
+
+
 ### How It Works:  
 1. **User Authentication** – New users must register, and existing users can log in.  
 2. **Resume Upload** – Users upload a PDF containing their resume or relevant information.  
